@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #3333FF;
+}
+.style1 {
+	font-size: 36px;
+	font-weight: bold;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body>
+<div id="Layer1" class="style1" style="position:absolute; left:22px; top:23px; width:611px; height:96px; z-index:1">
+  <div align="center">CARRERAS</div>
+</div>
+<div id="Layer2" style="position:absolute; left:20px; top:147px; width:617px; height:469px; z-index:2">
+  <p><div style="position:relative;left:0px;top:0px">
+<span id="highlighter" style="position:absolute;left:0;top:0;font-size:18px;font-family:Verdana;background-color:yellow;clip:rect(0px 0px auto 0px)"></span>
+</div>
+
+<script type="text/javascript">
+
+/*
+Highligher Scroller script- By JavaScript Kit
+For this and over 400+ free scripts, visit http://www.javascriptkit.com/
+This notice must stay intact
+*/
+
+var tickercontents=new Array()
+tickercontents[0]='INGENIERIA EN SISTEMAS INCRIPCIONES ABIERTAS <a href="https://ucad.edu.mx/Becas_Universitarias/Promocion_Facebook/Administracion/Licenciatura-En-Administracion.html?gclid=CjwKCAjwtdeFBhBAEiwAKOIy579fnPUAJsjA-5Q4mfcPcIx0GyXZHXpzKDFcYY-MfKON3YhuT0e3mBoCmP8QAvD_BwE">INFORMES</a>!'
+tickercontents[1]='SI YA ERES ALUMNO <a href="https://saas.ucad.edu.mx/universidad/home/alumno/index">DAR CLICK </a> PARA INGRESA A TU CUENTA UCAD!'
+tickercontents[2]='Revisa con que licenciaturas contamos <a href="https://www.altillo.com/universidades/mexico/de/distritofederal/Universidad_de_Ciencias_y_Administracion_UCAD.asp">Da click</a>'
+
+var tickdelay=3000 //delay btw messages
+var highlightspeed=10 //10 pixels at a time.
+
+////Do not edit pass this line////////////////
+
+var currentmessage=0
+var clipwidth=0
+
+function changetickercontent(){
+crosstick.style.clip="rect(0px 0px auto 0px)"
+crosstick.innerHTML=tickercontents[currentmessage]
+highlightmsg()
+}
+
+function highlightmsg(){
+var msgwidth=crosstick.offsetWidth
+if (clipwidth<msgwidth){
+clipwidth+=highlightspeed
+crosstick.style.clip="rect(0px "+clipwidth+"px auto 0px)"
+beginclip=setTimeout("highlightmsg()",20)
+}
+else{
+clipwidth=0
+clearTimeout(beginclip)
+if (currentmessage==tickercontents.length-1) currentmessage=0
+else currentmessage++
+setTimeout("changetickercontent()",tickdelay)
+}
+}
+
+function start_ticking(){
+crosstick=document.getElementById? document.getElementById("highlighter") : document.all.highlighter
+crosstickParent=crosstick.parentNode? crosstick.parentNode : crosstick.parentElement
+if (parseInt(crosstick.offsetHeight)>0)
+crosstickParent.style.height=crosstick.offsetHeight+'px'
+else
+setTimeout("crosstickParent.style.height=crosstick.offsetHeight+'px'",100) //delay for Mozilla's sake
+changetickercontent()
+}
+
+if (document.all || document.getElementById)
+window.onload=start_ticking
+
+</script>
+
+<p align="left">&nbsp;</p>
+</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</div>
+<div id="Layer3" style="position:absolute; left:130px; top:355px; width:277px; height:244px; z-index:3"><img src="carr.jpg" width="365" height="245"></div>
+</body>
+</html>
